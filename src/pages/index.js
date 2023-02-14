@@ -16,4 +16,6 @@ function IndexPage() {
 }
 
 export default IndexPage
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+`

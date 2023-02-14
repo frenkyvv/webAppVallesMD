@@ -68,7 +68,6 @@ class Inicio extends React.Component {
 export default Inicio
 
 const Wrapper = styled.div`
-  background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
   z-index: -3;
 `
 const Innerwrapper = styled.div`

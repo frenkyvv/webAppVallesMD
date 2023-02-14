@@ -17,17 +17,18 @@ export default function WaveBackground() {
 
 const Wrapper = styled.div`
   position: absolute;
-  z-index: -2;
+  background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  z-index: 0;
 `
 const Wave = styled.img`
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  z-index: 0;
 `
 const Background = styled.div`
   height: 800px;
-  position: relative;
+  position: absolute;
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
-  z-index: -1;
+  z-index: 1;
 `
 
 // background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
