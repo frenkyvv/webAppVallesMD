@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import Inicio from "./page-1"
+import Inicio from "../components/sections/page-1"
 
 function IndexPage() {
   return (

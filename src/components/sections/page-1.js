@@ -1,12 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout/layout"
-import SEO from "../components/layout/seo"
+import Layout from "../layout/layout"
+import SEO from "../layout/seo"
 import { Link } from "gatsby"
-import Line from "../components/items/Line"
-import WaveBackground from "../../../formulasgris/src/components/backgrounds/WaveBackground"
-import Boton from "../components/botones/BotonLink"
-import Footer from "../components/sections/Footer"
+import WaveBackground from "../backgrounds/WaveBackground"
+import Boton from "../botones/BotonLink"
+import Footer from "../sections/Footer"
 
 class Inicio extends React.Component {
   render() {
