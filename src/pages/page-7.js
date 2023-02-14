@@ -4,23 +4,23 @@ import Boton from "../components/botones/BotonLink"
 import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import DopaminaForm from "../components/formulas/DopaminaForm"
+import AlteplaseForm from "../components/formulas/AlteplaseForm"
+import Foot from "../components/sections/Footer"
 
-function SecondPage() {
+export default function Pagina7() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
           <SEO title="Dopamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
-            <Description>
-              Formula para calcular la dosis de Dopamina
-            </Description>
+            <Title>Dosis de Alteplase</Title>
+            <Line />
+            <Description>Formula para el uso del Alteplase</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <DopaminaForm />
+            <AlteplaseForm />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -28,12 +28,13 @@ function SecondPage() {
             <Boton text="Back" />
           </Link>
         </BackBut>
+        <FooterDiv>
+          <Foot />
+        </FooterDiv>
       </Wrapper>
     </Layout>
   )
 }
-
-export default SecondPage
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
@@ -41,6 +42,7 @@ const Wrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   width: 100%;
+  height: 400px;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -58,7 +60,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
 `
 const FormWrapper = styled.div`
   display: flex;
@@ -71,6 +72,17 @@ const BackBut = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 50px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

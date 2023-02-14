@@ -1,18 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
+import Inicio from "./page-1"
 
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <img src="/images/logos/logo.svg" alt="logo" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
+      <SEO title="VallesMD" />
+      <Wrapper>
+        <Inicio />
+      </Wrapper>
     </Layout>
   )
 }
 
 export default IndexPage
+const Wrapper = styled.div``
